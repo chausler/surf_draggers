@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+div {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev, el) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  el.appendChild(document.getElementById(data));
+}
+
+</script>
+</head>
+<body>
+
+<h2>Drag and Drop</h2>
+<p>Drag the image back and forth between the two div elements.</p>
+
+<div id="div1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+    <img src="surfer.gif" draggable="true" ondragstart="drag(event)" id="drag114" width="88" height="88" >
+    <img src="surfer14.png" draggable="true" ondragstart="drag(event)" id="drag193" width="88" height="88" >
+    <img src="surfer.gif" draggable="true" ondragstart="drag(event)" id="drag11" width="88" height="88" >
+    <img src="surfer02.png" draggable="true" ondragstart="drag(event)" id="drag133" width="88" height="88" >
+    <img src="surfer01.gif" draggable="true" ondragstart="drag(event)" id="drag124" width="88" height="88" >
+    <img src="surfer02.png" draggable="true" ondragstart="drag(event)" id="drag132" width="88" height="88" >
+    <img src="surfer02.png" draggable="true" ondragstart="drag(event)" id="drag131" width="88" height="88" >
+    <img src="surfer03.png" draggable="true" ondragstart="drag(event)" id="drag142" width="88" height="88" >
+    <img src="surfer01.gif" draggable="true" ondragstart="drag(event)" id="drag121" width="88" height="88" >
+    <img src="surfer13.png" draggable="true" ondragstart="drag(event)" id="drag182" width="88" height="88" >
+    <img src="surfer14.png" draggable="true" ondragstart="drag(event)" id="drag192" width="88" height="88" >
+    <img src="surfer.gif" draggable="true" ondragstart="drag(event)" id="drag113" width="88" height="88" >
+    <img src="surfer03.png" draggable="true" ondragstart="drag(event)" id="drag145" width="88" height="88" >
+    <img src="surfer02.png" draggable="true" ondragstart="drag(event)" id="drag134" width="88" height="88" >
+    <img src="surfer05.gif" draggable="true" ondragstart="drag(event)" id="drag153" width="88" height="88" >
+    <img src="surfer03.png" draggable="true" ondragstart="drag(event)" id="drag144" width="88" height="88" >
+    <img src="surfer05.gif" draggable="true" ondragstart="drag(event)" id="drag152" width="88" height="88" >
+    <img src="surfer11.png" draggable="true" ondragstart="drag(event)" id="drag164" width="88" height="88" >
+    <img src="surfer03.png" draggable="true" ondragstart="drag(event)" id="drag143" width="88" height="88" >
+    <img src="surfer05.gif" draggable="true" ondragstart="drag(event)" id="drag151" width="88" height="88" >
+    <img src="surfer05.gif" draggable="true" ondragstart="drag(event)" id="drag154" width="88" height="88" >
+    <img src="surfer11.png" draggable="true" ondragstart="drag(event)" id="drag162" width="88" height="88" >
+    <img src="surfer11.png" draggable="true" ondragstart="drag(event)" id="drag163" width="88" height="88" >
+    <img src="surfer03.png" draggable="true" ondragstart="drag(event)" id="drag141" width="88" height="88" >
+    <img src="surfer01.gif" draggable="true" ondragstart="drag(event)" id="drag123" width="88" height="88" >
+    <img src="surfer01.gif" draggable="true" ondragstart="drag(event)" id="drag122" width="88" height="88" >
+    <img src="surfer12.png" draggable="true" ondragstart="drag(event)" id="drag171" width="88" height="88" >
+    <img src="surfer13.png" draggable="true" ondragstart="drag(event)" id="drag183" width="88" height="88" >
+    <img src="surfer.gif" draggable="true" ondragstart="drag(event)" id="drag112" width="88" height="88" >
+    <img src="surfer12.png" draggable="true" ondragstart="drag(event)" id="drag172" width="88" height="88" >
+    <img src="surfer12.png" draggable="true" ondragstart="drag(event)" id="drag174" width="88" height="88" >
+    <img src="surfer13.png" draggable="true" ondragstart="drag(event)" id="drag181" width="88" height="88" >
+    <img src="surfer11.png" draggable="true" ondragstart="drag(event)" id="drag161" width="88" height="88" >
+    <img src="surfer13.png" draggable="true" ondragstart="drag(event)" id="drag184" width="88" height="88" >
+    <img src="surfer14.png" draggable="true" ondragstart="drag(event)" id="drag191" width="88" height="88" >
+    <img src="surfer12.png" draggable="true" ondragstart="drag(event)" id="drag173" width="88" height="88" >
+  <img src="surfer14.png" draggable="true" ondragstart="drag(event)" id="drag194" width="88" height="88" >
+</div>
+
+<div id="div2" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div4" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div5" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div6" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div7" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div8" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div9" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+<div id="div10" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+
+</body>
+</html>
